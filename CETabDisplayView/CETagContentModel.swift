@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuContentModel {
+class CETagContentModel {
     var title: String
     var titleWidth: CGFloat {
         get {

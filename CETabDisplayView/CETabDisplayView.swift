@@ -11,13 +11,15 @@ private let reuseIdentifier = "CETabDisplayViewCell"
 class CETabDisplayView: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     var collectionView: UICollectionView!
-    var dataSource: Array<MenuContentModel> = []
+    var dataSource: Array<CETagContentModel> = []
     
     
-    override init(frame: CGRect = CGRect.zero) {
+    init(frame: CGRect = CGRect.zero, dataSource: () -> Array<CETagContentModel>) {
         super.init(frame: frame)
         self.addCollectionView()
-        self.createTestDataSource()
+        self.dataSource = dataSource()
+        self.collectionView.reloadData()
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -31,21 +33,6 @@ class CETabDisplayView: UIView, UICollectionViewDataSource, UICollectionViewDele
         self.collectionView.backgroundColor = UIColor.white
         self.collectionView.register(CETabDisplayViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         self.addSubview(collectionView)
-    }
-    
-    func createTestDataSource() {
-        for i in 0..<5 {
-            var title = "四个的字"
-            
-            if i % 3 == 0 {
-                title = "俩字"
-            }
-            if i % 3 == 1 {
-                title = "三个字"
-            }
-            self.dataSource.append(MenuContentModel(title: title))
-        }
-        self.collectionView.reloadData()
     }
 
     // MARK: UICollectionViewDataSource
@@ -79,6 +66,6 @@ class CETabDisplayView: UIView, UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 6
+        return 10
     }
 }

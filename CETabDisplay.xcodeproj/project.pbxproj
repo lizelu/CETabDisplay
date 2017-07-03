@@ -14,7 +14,7 @@
 		F42BAEA11F0A28E800C52E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42BAE9F1F0A28E800C52E4B /* LaunchScreen.storyboard */; };
 		F42BAEAC1F0A2A4900C52E4B /* CETabDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42BAEA91F0A2A4900C52E4B /* CETabDisplayView.swift */; };
 		F42BAEAD1F0A2A4900C52E4B /* CETabDisplayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42BAEAA1F0A2A4900C52E4B /* CETabDisplayViewCell.swift */; };
-		F42BAEAE1F0A2A4900C52E4B /* MenuContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42BAEAB1F0A2A4900C52E4B /* MenuContentModel.swift */; };
+		F42BAEAE1F0A2A4900C52E4B /* CETagContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42BAEAB1F0A2A4900C52E4B /* CETagContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		F42BAEA21F0A28E800C52E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F42BAEA91F0A2A4900C52E4B /* CETabDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CETabDisplayView.swift; sourceTree = "<group>"; };
 		F42BAEAA1F0A2A4900C52E4B /* CETabDisplayViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CETabDisplayViewCell.swift; sourceTree = "<group>"; };
-		F42BAEAB1F0A2A4900C52E4B /* MenuContentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuContentModel.swift; sourceTree = "<group>"; };
+		F42BAEAB1F0A2A4900C52E4B /* CETagContentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CETagContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 			children = (
 				F42BAEA91F0A2A4900C52E4B /* CETabDisplayView.swift */,
 				F42BAEAA1F0A2A4900C52E4B /* CETabDisplayViewCell.swift */,
-				F42BAEAB1F0A2A4900C52E4B /* MenuContentModel.swift */,
+				F42BAEAB1F0A2A4900C52E4B /* CETagContentModel.swift */,
 			);
 			path = CETabDisplayView;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 				F42BAE971F0A28E800C52E4B /* AppDelegate.swift in Sources */,
 				F42BAEAC1F0A2A4900C52E4B /* CETabDisplayView.swift in Sources */,
 				F42BAEAD1F0A2A4900C52E4B /* CETabDisplayViewCell.swift in Sources */,
-				F42BAEAE1F0A2A4900C52E4B /* MenuContentModel.swift in Sources */,
+				F42BAEAE1F0A2A4900C52E4B /* CETagContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
